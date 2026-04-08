@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "noEmitHelpers": true,
+        "target": "es5"
+        // watch must be run from the command line
+        // "watch": true
+    }
+}
