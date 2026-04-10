@@ -1,4 +1,4 @@
-// Listing 3.4 - Using the super keyword
+// Listing 3.4 - Using the super keyword, page 50
 
 // If both the superclass and the subclass have constructors, the
 // subclass constructor must invoke the constructor of the superclass using
