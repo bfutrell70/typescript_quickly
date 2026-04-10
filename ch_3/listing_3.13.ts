@@ -94,3 +94,65 @@ class SecretServiceCar extends Car implements Flyable, Swimmable {
         throw new Error("Glub glub.");
     }
 }
+
+// Listing 3.18 - A class that implements three interfaces - page 63
+class AnotherSecretServiceCar implements MotorVehicle, Flyable, Swimmable {
+    startEngine(): boolean {
+        throw new Error("Method not implemented.");
+    }
+    stopEngine(): boolean {
+        throw new Error("Method not implemented.");
+    }
+    brake(): boolean {
+        throw new Error("Method not implemented.");
+    }
+    accelerate(speed: number): void {
+        throw new Error("Method not implemented.");
+    }
+    honk(howLong: number): void {
+        throw new Error("Method not implemented.");
+    }
+    fly(howHigh: number): void {
+        throw new Error("Method not implemented.");
+    }
+    land(): void {
+        throw new Error("Method not implemented.");
+    }
+    swim(howFar: number): void {
+        throw new Error("Method not implemented.");
+    }
+}
+
+// Listing 3.19 - Extending an interfce - page 63
+interface Flyable2 extends MotorVehicle {
+    fly(howHigh: number): void;
+    land(): void;
+}
+
+// Listing 3.20 - A class that implements Flyable2 and Swimmable - page 63
+class YetAnotherSecretServiceCar implements Flyable2, Swimmable {
+    startEngine(): boolean {
+        return true;
+    }
+    stopEngine(): boolean {
+        return true;
+    }
+    brake(): boolean {
+        return true;
+    }
+    accelerate(speed: number): void {
+        console.log(`Driving Faster`);
+    }
+    honk(howLong: number): void {
+        console.log(`Beep beep yeah!`);
+    }
+    fly(howHigh: number): void {
+        console.log(`How high can I fly?`);
+    }
+    land(): void {
+        throw new Error("Landing the car!");
+    }
+    swim(howFar: number): void {
+        throw new Error("Glub glub.");
+    }
+}
