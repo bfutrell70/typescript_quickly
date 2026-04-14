@@ -12,6 +12,7 @@ class Animal {
     breed: string | undefined;
 }
 
+// const can be uesd since adding elements to the array doesn't change the address of workers in memory
 const workers: Array<Person> = [];
 
 workers[0] = new Person();
