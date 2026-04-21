@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "file": "listing_6.1.js",
+    "sourceRoot": "",
+    "sources": [
+        "listing_6.1.ts"
+    ],
+    "names": [],
+    "mappings": ";AAAA,MAAM,OAAO;IACT,MAAM,CAAC,QAAQ,CAAC,IAAY;QACxB,OAAO,CAAC,GAAG,CAAC,SAAS,IAAI,EAAE,CAAC,CAAC;IACjC,CAAC;CACJ;AAED,OAAO,CAAC,QAAQ,CAAC,MAAM,CAAC,CAAC"
+}
