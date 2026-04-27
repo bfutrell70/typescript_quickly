@@ -6,5 +6,8 @@
         "listing_6.1.ts"
     ],
     "names": [],
-    "mappings": ";AAAA,MAAM,OAAO;IACT,MAAM,CAAC,QAAQ,CAAC,IAAY;QACxB,OAAO,CAAC,GAAG,CAAC,SAAS,IAAI,EAAE,CAAC,CAAC;IACjC,CAAC;CACJ;AAED,OAAO,CAAC,QAAQ,CAAC,MAAM,CAAC,CAAC"
+    "mappings": ";AAAA,MAAM,OAAO;IACT,MAAM,CAAC,QAAQ,CAAC,IAAY;QACxB,OAAO,CAAC,GAAG,CAAC,SAAS,IAAI,EAAE,CAAC,CAAC;IACjC,CAAC;CACJ;AAED,OAAO,CAAC,QAAQ,CAAC,MAAM,CAAC,CAAC",
+    "sourcesContent": [
+        "class Greeter {\n    static sayHello(name: string): void {\n        console.log(`Hello ${name}`);\n    }\n}\n\nGreeter.sayHello('John');"
+    ]
 }
