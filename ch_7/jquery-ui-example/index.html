@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery UI Example</title>
+
+    <!-- 
+        listing 7.7 - adding jQuery and jQueryUI to index.html, page 160
+        versions updated to the current versions, links copied from jQuery site
+    -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+        integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js"
+        integrity="sha256-mblSWfbYzaq/f+4akyMhE6XELCou4jbkgPv+JQPER2M=" crossorigin="anonymous"></script>
+
+    <!-- listing 7.8 - a fragment from the <style> tag in index.html, page 161 -->
+    <style>
+        body {
+            margin: 32px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        #shapes {
+            display: flex;
+            margin-bottom: 16px;
+        }
+
+        #shapes>*:not(:last-child) {
+            margin-right: 32px;
+        }
+
+        @media (max-width: 640px) {
+            #shapes {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #shapes>*:not(:last-child) {
+                margin-bottom: 16px;
+                margin-right: 0;
+            }
+        }
+
+        #rectangle {
+            background-color: blue;
+            height: 100px;
+            width: 150px;
+        }
+
+        #circle {
+            background-color: green;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+
+        #triangle {
+            color: green;
+            height: 100px;
+            width: 150px;
+        }
+
+        #selector {
+            min-width: 220px;
+        }
+
+        #error {
+            color: red;
+        }
+
+        #info {
+            color: blue;
+        }
+    </style>
+</head>
+
+<!-- listing 7.9 - the body section of index.html, page 162 -->
+<body>
+    <div id="shapes">
+        <div id="rectangle" class="blue" hasAngles></div>
+
+        <div id="circle" class="green"></div>
+
+        <div id="triangle" class="green" hasAngles>
+            <svg viewBox="0 0 150 100">
+                <polygon points="75, 0, 150, 100, 0, 100" fill="currentColor" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="ui-widget">
+        <label for="selector">Selector:</label>
+        <input id="selector" placeholder="Enter a valid CSS selector">
+        <span id="error"></span>
+        <span id="info"></span>
+    </div>
+
+    <script src="dist/index.js"></script>
+</body>
+
+</html>
